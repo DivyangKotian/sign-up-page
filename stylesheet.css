@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+.full-container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    max-height: 200vh;
+    border:20px solid #4d5ec241;
+    background-color: #ffd3ee;
+    margin: 0;
+    padding: 0;
+}
+
+.dog-img{
+    max-width: 100%;   
+    max-height: 95vh;
+}
+
+.form{
+    min-width: fit-content;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #a5b1f141;
+    color: #000;
+    position: relative;
+    padding: 10px;
+  }
+
+  /* Style all input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border-radius: 40px;
+}
+/* Style the container for inputs */
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #4d5ec241;
+  min-width: 40vw;
+  padding: 35px;
+  border-radius: 30px;
+}
+
+#message p {
+  padding: 5px 15px;
+  font-size: 15px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -15px;
+  content: ' \2713';
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -15px;
+  content: "\2718";
+}
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    opacity: 0.6; /* Initially disabled */
+    pointer-events: none; /* Initially disabled */
+}
+.submit-btn.enabled {
+    opacity: 1; /* Enabled */
+    pointer-events: auto; /* Enabled */
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+}
+.success {
+    color: green;
+    font-size: 0.875rem;
+}
+

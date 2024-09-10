@@ -65,7 +65,7 @@ document.getElementById('registrationForm').addEventListener('keyup', validateFo
 function validateForm() {
   let isValid = true;
 
-  if (!firstName.value || !lastName.value || !email.value || !phoneNumner.value || !passwordInput.value || !confirmPassword.value) {
+  if (!firstName.value || !lastName.value || !email.value || !phoneNumner.value || !passwordInput.value || !confirmPassword.value ) {
     isValid = false;
   }
 

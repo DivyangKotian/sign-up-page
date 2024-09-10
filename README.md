@@ -57,3 +57,5 @@ The project is for educational purposes and has helped me explore a lot of inter
 ----------------
 
 This project was inspired by (https://www.theodinproject.com/dashboard).
+
+Live preview(https://divyangkotian.github.io/sign-up-page/)

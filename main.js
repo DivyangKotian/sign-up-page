@@ -9,6 +9,8 @@ const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
 const submitButton = document.getElementById("submitBtn");
 const errorMessage = document.getElementById("password-error");
+const email = document.getElementById("email");
+const phoneNumner = document.getElementById("phone-number");
 
 passwordInput.onfocus = function() {
   message.style.display = "block";
@@ -63,7 +65,7 @@ document.getElementById('registrationForm').addEventListener('keyup', validateFo
 function validateForm() {
   let isValid = true;
 
-  if (!passwordInput.value || !confirmPassword.value) {
+  if (!firstName.value || !lastName.value || !email.value || !phoneNumner.value || !passwordInput.value || !confirmPassword.value) {
     isValid = false;
   }
 
@@ -78,7 +80,7 @@ function validateForm() {
     errorMessage.classList.add("success");
   }
 
-  if (isValid) {
+  if (isValid===true) {
     submitButton.classList.add("enabled");
   } else {
     submitButton.classList.remove("enabled");

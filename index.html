@@ -20,43 +20,41 @@
             <div class="full-container">
             <div class="image">
                 <img src="imgs/imagedog.png" alt="Dog sitting in a box" class="dog-img">
-            </div>
+            </div> 
             <div class="sign-up-page">
             <div class="Heading">
                 
             </div>
                 <div class="user-information">
-                    <form id="registrationForm" class="form" action="#" method="get">
+                    <form id="registrationForm" class="form" action="#" method="get" aria-label="Signup form">
                         <h1>  This is not a real online service</h1>
                         <h3> Let's get started</h3>
                         <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control" id="first-name" placeholder="Enter First Name" name="first-name" required>
+                            <input type="text" class="form-control" id="first-name" placeholder="Enter First Name" name="first-name" aria-label="Enter your first name" required>
                             <label for="first-name">First Name</label>
                         </div>
-                        <br>
-
-                        <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Your last name please" required>
-                            <label for="last-name" > Last name</label>
-                        </div>
-                        <br>
                     
 
                         <div class="form-floating mb-3 mt-3">
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                            <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Your last name please" aria-label="Enter your last name" required>
+                            <label for="last-name" > Last name</label>
+                        </div>
+            
+                    
+
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" aria-label="Enter your Email ID" required>
                             <label for="email">Email</label>
                         </div>
-
-                        <br>
+                        
                         <div class="form-floating mb-3 mt-3">
-                            <input type="number" class="form-control" name="phone-number" required id="phone-number" placeholder="XXXXXXXXXX" minlength="10" maxlength="10">
+                            <input type="number" class="form-control" name="phone-number"  aria-label="Enter your Phone number" required id="phone-number" placeholder="XXXXXXXXXX" minlength="10" maxlength="10">
                             <label for="phone-number"> Valid Phone number</label>
                         </div>
 
-                        <br>
-
+                        
                         <div class="input password-container form-floating mb-3 mt-3">
-                            <input type="password" class="form-control" id="password" required name="password" placeholder="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <input type="password" class="form-control" id="password" required name="password" placeholder="password" minlength="8" aria-label="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                             <label for="password"> Enter a password</label>
                         </div>
 
@@ -67,19 +65,14 @@
                             <p id="number" class="invalid">A <b>number</b></p>
                             <p id="length" class="invalid">Minimum <b>8 characters</b></p>
                         </div>
-
-                        <br>
                     
                          <div class="input password-container form-floating mb-3 mt-3">
-                            <input type="password" class="form-control" id="confirm-password" required name="confirm-password" placeholder="password" minlength="8">
+                            <input type="password" class="form-control" id="confirm-password" required name="confirm-password" placeholder="password" minlength="8" aria-label="Enter your password again to confirm it">
                             <label for="confirm-password"> Confirm password</label>
                             <span id="password-error" class="error"> </span>
                         </div>
 
-                    
-                        <br>    
-
-                        <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+                        <button type="submit" class="submit-btn" id="submitBtn" aria-label="Submit button">Submit</button>
                         <p class="log-in">Already have an account?<a href="" class="color">Log in</a></p>
                     </form>
                 </div>
@@ -87,9 +80,10 @@
         </div>
     </main>
     <footer class="footer ">
-        <p>Photo of the dog by <a href="https://www.pexels.com/photo/closeup-photo-of-brown-and-black-dog-face-406014/">Lum3n</a> on <a href="https://www.pexels.com/">pexels</a></p>
+        <span><p>Photo of the dog by <a href="https://www.pexels.com/photo/closeup-photo-of-brown-and-black-dog-face-406014/">Lum3n</a> on <a href="https://www.pexels.com/">pexels</a></p></span>
         <br><br><br>
-        <p>
+        <div>
+            <p>
           Copyright ©
           <script>
             document.write(new Date().getFullYear())
@@ -99,6 +93,7 @@
         <a href="https://github.com/DivyangKotian" target="_blank">
           <i class="fab fa-github"></i
             ></a>
+            </div>
           </footer>
     <script src="main.js"></script>
 
